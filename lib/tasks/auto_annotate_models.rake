@@ -6,11 +6,11 @@ if Rails.env.development?
     # You can override any of these by setting an environment variable of the
     # same name.
     Annotate.set_defaults({
-      'position_in_routes'   => "before",
-      'position_in_class'    => "before",
-      'position_in_test'     => "before",
-      'position_in_fixture'  => "before",
-      'position_in_factory'  => "before",
+      'position_in_routes'   => "after",
+      'position_in_class'    => "after",
+      'position_in_test'     => "after",
+      'position_in_fixture'  => "after",
+      'position_in_factory'  => "after",
       'show_indexes'         => "true",
       'simple_indexes'       => "false",
       'model_dir'            => "app/models",
