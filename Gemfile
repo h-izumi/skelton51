@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
+  repo_name = '#{repo_name}/#{repo_name}' unless repo_name.include?('/')
+  'https://github.com/#{repo_name}.git'
 end
 
 
@@ -30,6 +30,13 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Improve console
+gem 'pry-rails'
+gem 'pry-coolline'
+gem 'pry-byebug'
+gem 'pry-doc'
+gem 'awesome_print'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
