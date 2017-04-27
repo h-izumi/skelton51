@@ -40,6 +40,10 @@ GEM
       tzinfo (~> 1.1)
     arel (8.0.0)
     awesome_print (1.7.0)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (9.0.6)
@@ -50,6 +54,7 @@ GEM
     database_rewinder (0.8.0)
     diff-lcs (1.3)
     erubi (1.6.0)
+    erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.8.0)
       activesupport (>= 3.0.0)
@@ -194,6 +199,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  better_errors
   byebug
   database_rewinder
   factory_girl_rails
