@@ -52,6 +52,9 @@ GEM
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -223,6 +226,7 @@ DEPENDENCIES
   awesome_print
   babel-transpiler
   better_errors
+  bootstrap-sass
   byebug
   config
   database_rewinder
