@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     actioncable (5.1.0)
       actionpack (= 5.1.0)
@@ -52,6 +53,9 @@ GEM
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -137,6 +141,7 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.1.0)
       sprockets-rails (>= 2.0.0)
+    rails-assets-bootstrap.native (2.0.10)
     rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6)
@@ -223,6 +228,7 @@ DEPENDENCIES
   awesome_print
   babel-transpiler
   better_errors
+  bootstrap-sass
   byebug
   config
   database_rewinder
@@ -237,6 +243,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.7)
   rails (= 5.1.0)
+  rails-assets-bootstrap.native!
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)
   spring
