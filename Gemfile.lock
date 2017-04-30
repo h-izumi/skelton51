@@ -43,6 +43,10 @@ GEM
       rake (>= 0.8.7)
     arel (8.0.0)
     awesome_print (1.7.0)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -217,6 +221,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   awesome_print
+  babel-transpiler
   better_errors
   byebug
   config
