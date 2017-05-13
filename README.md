@@ -17,15 +17,23 @@ My Ruby on Rails 5.1 boilerplate.
 
 ## How to use
 
+Use [setup.rb](https://raw.githubusercontent.com/h-izumi/skelton51/master/setup.rb):
+
 ```shell
-cd /path/to/app's_parent
+curl -L https://raw.githubusercontent.com/h-izumi/skelton51/master/setup.rb | APP_NAME="app-name" ruby
+```
+
+or Manually:
+
+```shell
+cd /path/to/app's-parent
 curl -L -o skelton51.zip https://github.com/h-izumi/skelton51/archive/master.zip
 unzip skelton51.zip
-mv skelton51-master appname
+mv skelton51-master app-name
 cd appname
-find . -type f -print0 | xargs -0 sed -i -e 's/SKELTON51/APPNAME/g'
-find . -type f -print0 | xargs -0 sed -i -e 's/skelton51/appname/g'
-find . -type f -print0 | xargs -0 sed -i -e 's/Skelton51/Appname/g'
+find . -type f -print0 | xargs -0 sed -i -e 's/SKELTON51/APP_NAME/g'
+find . -type f -print0 | xargs -0 sed -i -e 's/skelton51/app_name/g'
+find . -type f -print0 | xargs -0 sed -i -e 's/Skelton51/AppName/g'
 rm README.md
 rm UNLICENSE
 git init
