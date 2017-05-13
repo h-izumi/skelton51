@@ -32,7 +32,7 @@ curl -L -o skelton51.zip https://github.com/h-izumi/skelton51/archive/master.zip
 unzip skelton51.zip
 mv skelton51-master app-name
 rm skelton51.zip
-cd appname
+cd app-name
 find . -type f -print0 | xargs -0 sed -i -e 's/SKELTON51/APP_NAME/g'
 find . -type f -print0 | xargs -0 sed -i -e 's/skelton51/app_name/g'
 find . -type f -print0 | xargs -0 sed -i -e 's/Skelton51/AppName/g'
