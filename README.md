@@ -1,24 +1,32 @@
-# README
+# skelton51
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My Ruby on Rails 5.1 boilerplate.
 
-Things you may want to cover:
+* Ruby 2.4
+* Ruby on Rails 5.1
+  * `rails new . -d postgresql --webpack=react --skip-coffee --skip-turbolinks -T`
+* Sprockets 4
+  * with [Ruby Babel Transpiler](https://github.com/babel/ruby-babel-transpiler)
+* Webpacker
+  * with React
+* Haml
+* Bootstrap 3 with **no jQuery**
+  * with [bootstrap.native](https://thednp.github.io/bootstrap.native/)
+* RSpec
+* etc...
 
-* Ruby version
+## How to use
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```shell
+cd /path/to/app's_parent
+curl -L -o skelton51.zip https://github.com/h-izumi/skelton51/archive/master.zip
+unzip skelton51.zip
+mv skelton51-master appname
+cd appname
+find . -type f -print0 | xargs -0 sed -i -e 's/SKELTON51/APPNAME/g'
+find . -type f -print0 | xargs -0 sed -i -e 's/skelton51/appname/g'
+find . -type f -print0 | xargs -0 sed -i -e 's/Skelton51/Appname/g'
+git init
+git add .
+git commit -m "initial."
+```
