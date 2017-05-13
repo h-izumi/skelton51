@@ -26,7 +26,15 @@ cd appname
 find . -type f -print0 | xargs -0 sed -i -e 's/SKELTON51/APPNAME/g'
 find . -type f -print0 | xargs -0 sed -i -e 's/skelton51/appname/g'
 find . -type f -print0 | xargs -0 sed -i -e 's/Skelton51/Appname/g'
+rm README.md
+rm UNLICENSE
 git init
 git add .
 git commit -m "initial."
 ```
+
+## License
+
+[The Unlicense](http://unlicense.org/).
+
+You probably should remove `UNLICENSE` file when use this repo on your work.
