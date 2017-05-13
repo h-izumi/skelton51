@@ -20,14 +20,14 @@ My Ruby on Rails 5.1 boilerplate.
 Use [setup.rb](https://raw.githubusercontent.com/h-izumi/skelton51/master/setup.rb):
 
 ```shell
-cd /path/to/app's-parent
+cd /path/to/app-parent
 curl -L https://raw.githubusercontent.com/h-izumi/skelton51/master/setup.rb | APP_NAME="app-name" ruby
 ```
 
 or Manually:
 
 ```shell
-cd /path/to/app's-parent
+cd /path/to/app-parent
 curl -L -o skelton51.zip https://github.com/h-izumi/skelton51/archive/master.zip
 unzip skelton51.zip
 mv skelton51-master app-name
