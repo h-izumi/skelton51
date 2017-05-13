@@ -20,6 +20,7 @@ My Ruby on Rails 5.1 boilerplate.
 Use [setup.rb](https://raw.githubusercontent.com/h-izumi/skelton51/master/setup.rb):
 
 ```shell
+cd /path/to/app's-parent
 curl -L https://raw.githubusercontent.com/h-izumi/skelton51/master/setup.rb | APP_NAME="app-name" ruby
 ```
 
