@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/h-izumi/annotate_models.git
+  revision: 1091597c0ef698ee739d8174b47977addbbf2c29
+  branch: remove-version-restriction-on-rake
+  specs:
+    annotate (2.7.1)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -39,10 +48,9 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    annotate (2.6.5)
-      activerecord (>= 2.3.0)
-      rake (>= 0.8.7)
     arel (8.0.0)
+    autoprefixer-rails (7.0.1)
+      execjs
     awesome_print (1.7.0)
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
@@ -65,7 +73,7 @@ GEM
       deep_merge (~> 1.1.1)
     coolline (0.5.0)
       unicode_utils (~> 1.4)
-    database_rewinder (0.8.0)
+    database_rewinder (0.8.1)
     deep_merge (1.1.1)
     diff-lcs (1.3)
     erubi (1.6.0)
@@ -89,9 +97,9 @@ GEM
       hamlit (>= 1.2.0)
       railties (>= 4.0.1)
     i18n (0.8.1)
-    jbuilder (2.6.3)
-      activesupport (>= 3.0.0, < 5.2)
-      multi_json (~> 1.2)
+    jbuilder (2.6.4)
+      activesupport (>= 3.0.0)
+      multi_json (>= 1.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -105,10 +113,10 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
-    minitest (5.10.1)
+    minitest (5.10.2)
     multi_json (1.12.1)
     nio4r (2.0.0)
-    nokogiri (1.7.1)
+    nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
     pg (0.20.0)
     pry (0.10.4)
@@ -126,7 +134,7 @@ GEM
     pry-rails (0.3.6)
       pry (>= 0.10.4)
     puma (3.8.2)
-    rack (2.0.1)
+    rack (2.0.2)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.1.0)
@@ -142,9 +150,9 @@ GEM
       railties (= 5.1.0)
       sprockets-rails (>= 2.0.0)
     rails-assets-bootstrap.native (2.0.10)
-    rails-dom-testing (2.0.2)
-      activesupport (>= 4.2.0, < 6.0)
-      nokogiri (~> 1.6)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     railties (5.1.0)
@@ -157,23 +165,23 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
-    rspec-core (3.5.4)
-      rspec-support (~> 3.5.0)
-    rspec-expectations (3.5.0)
+    rspec-core (3.6.0)
+      rspec-support (~> 3.6.0)
+    rspec-expectations (3.6.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.5.0)
-    rspec-mocks (3.5.0)
+      rspec-support (~> 3.6.0)
+    rspec-mocks (3.6.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.5.0)
-    rspec-rails (3.5.2)
+      rspec-support (~> 3.6.0)
+    rspec-rails (3.6.0)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
-      rspec-core (~> 3.5.0)
-      rspec-expectations (~> 3.5.0)
-      rspec-mocks (~> 3.5.0)
-      rspec-support (~> 3.5.0)
-    rspec-support (3.5.0)
+      rspec-core (~> 3.6.0)
+      rspec-expectations (~> 3.6.0)
+      rspec-mocks (~> 3.6.0)
+      rspec-support (~> 3.6.0)
+    rspec-support (3.6.0)
     ruby_dep (1.5.0)
     sass (3.4.23)
     sass-rails (5.0.6)
@@ -206,12 +214,12 @@ GEM
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unicode_utils (1.4.0)
-    web-console (3.5.0)
+    web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webpacker (1.1)
+    webpacker (1.2)
       activesupport (>= 4.2)
       multi_json (~> 1.2)
       railties (>= 4.2)
@@ -224,7 +232,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate
+  annotate!
   awesome_print
   babel-transpiler
   better_errors
