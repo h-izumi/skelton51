@@ -37,6 +37,7 @@ find . -type f -print0 | xargs -0 sed -i -e 's/skelton51/app_name/g'
 find . -type f -print0 | xargs -0 sed -i -e 's/Skelton51/AppName/g'
 rm README.md
 rm UNLICENSE
+rm setup.rb
 git init
 git add .
 git commit -m "initial."
