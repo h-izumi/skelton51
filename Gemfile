@@ -29,6 +29,7 @@ gem 'hamlit-rails'
 gem 'config'
 
 gem 'bootstrap-sass'
+gem 'font-awesome-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap.native'
