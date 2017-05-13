@@ -59,7 +59,7 @@ end
 
 group :development do
   gem 'better_errors'
-  gem 'annotate', git: 'https://github.com/h-izumi/annotate_models.git',
+  gem 'annotate', github: 'h-izumi/annotate_models',
     branch: 'remove-version-restriction-on-rake' # https://github.com/ctran/annotate_models/pull/445
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
