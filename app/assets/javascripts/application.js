@@ -11,5 +11,5 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require bootstrap.native
+//= require bootstrap.native/dist/bootstrap-native
 //= require_tree .
