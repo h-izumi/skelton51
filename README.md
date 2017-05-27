@@ -45,6 +45,8 @@ git add .
 git commit -m "initial."
 ```
 
+If use on macOS, you should set argument ` ''` after `sed -i`.
+
 ## License
 
 [The Unlicense](http://unlicense.org/).

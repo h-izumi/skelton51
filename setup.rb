@@ -19,6 +19,12 @@ if app_name.nil? || app_name.size < 0
   exit
 end
 
+if RbConfig::CONFIG['host_os'] =~ /darwin/
+  sed = "sed -i '' -e"
+else
+  sed = "sed -i -e"
+end
+
 app_parent_dir = Dir.pwd
 
 Dir.chdir("/tmp")
@@ -28,9 +34,9 @@ Dir.chdir("/tmp")
 `rm skelton51.zip`
 
 Dir.chdir("#{app_parent_dir}/#{app_name}")
-`find . -type f -print0 | xargs -0 sed -i -e 's/SKELTON51/#{app_name.upcase.tr("-", "_")}/g'`
-`find . -type f -print0 | xargs -0 sed -i -e 's/skelton51/#{app_name.underscore}/g'`
-`find . -type f -print0 | xargs -0 sed -i -e 's/Skelton51/#{app_name.camelize}/g'`
+`find . -type f -print0 | xargs -0 #{sed} 's/SKELTON51/#{app_name.upcase.tr("-", "_")}/g'`
+`find . -type f -print0 | xargs -0 #{sed} 's/skelton51/#{app_name.underscore}/g'`
+`find . -type f -print0 | xargs -0 #{sed} 's/Skelton51/#{app_name.camelize}/g'`
 `rm README.md`
 `rm UNLICENSE`
 `rm setup.rb`
