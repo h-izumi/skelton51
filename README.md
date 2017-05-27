@@ -10,6 +10,7 @@ My Ruby on Rails 5.1 boilerplate.
 * Webpacker
   * with React
 * Haml
+* dotenv
 * Bootstrap 3 with **no jQuery**
   * with [bootstrap.native](https://thednp.github.io/bootstrap.native/)
 * RSpec
