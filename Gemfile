@@ -31,6 +31,7 @@ gem 'hamlit-rails'
 gem 'config'
 
 gem 'bootstrap-sass'
+gem 'bootstrap_form'
 gem 'font-awesome-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
