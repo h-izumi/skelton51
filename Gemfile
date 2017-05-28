@@ -30,6 +30,8 @@ gem 'hamlit-rails'
 
 gem 'config'
 
+gem 'rails-i18n', '~> 5.0.0'
+
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'font-awesome-rails'
