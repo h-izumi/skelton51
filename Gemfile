@@ -31,6 +31,7 @@ gem 'hamlit-rails'
 gem 'config'
 
 gem 'rails-i18n', '~> 5.0.0'
+gem 'i18n-tasks', '~> 0.9.15'
 
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
