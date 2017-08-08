@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/h-izumi/annotate_models.git
-  revision: 1091597c0ef698ee739d8174b47977addbbf2c29
-  branch: remove-version-restriction-on-rake
-  specs:
-    annotate (2.7.1)
-      activerecord (>= 3.2, < 6.0)
-      rake (>= 10.4)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,6 +38,9 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    annotate (2.7.2)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4, < 13.0)
     arel (8.0.0)
     ast (2.3.0)
     autoprefixer-rails (7.1.2.4)
@@ -274,7 +268,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate!
+  annotate
   awesome_print
   babel-transpiler
   better_errors
