@@ -14,14 +14,15 @@
 !/log/.keep
 !/tmp/.keep
 
-/spec/examples.txt
-
+# Webpacker
+/public/packs
+/public/packs-test
 /node_modules
 /yarn-error.log
 
+/spec/examples.txt
+
 .byebug_history
-/public/packs
-/node_modules
 
 config/settings.local.yml
 config/settings/*.local.yml
