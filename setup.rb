@@ -38,7 +38,7 @@ Dir.chdir("#{app_parent_dir}/#{app_name}")
 `find . -type f -print0 | xargs -0 #{sed} 's/skelton51/#{app_name.underscore}/g'`
 `find . -type f -print0 | xargs -0 #{sed} 's/Skelton51/#{app_name.camelize}/g'`
 `rm README.md`
-`rm UNLICENSE`
+`rm LICENSE.txt`
 `rm setup.rb`
 `git init`
 `git add .`
