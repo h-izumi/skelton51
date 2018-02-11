@@ -2,6 +2,8 @@
 
 My Ruby on Rails 5.1 boilerplate.
 
+Using Rails 5.2 version is [here](https://github.com/h-izumi/skelton52).
+
 * Ruby 2.4
 * Ruby on Rails 5.1
   * `rails new . -d postgresql --webpack=react --skip-coffee --skip-turbolinks -T`
